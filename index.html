@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Targeted Selectors</title>
+  <style>
+  p {
+    background: #ddd;
+  }
+    div +p {
+      background: #333;
+      color: #fff;
+    }
+
+    div>p {
+      background: #ddd;
+        }
+a[target] {
+  background: red;
+  text-decoration: none;
+}
+input[text] {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+  </style>
+</head>
+
+<body>
+  <p> Copyright Holder All Rights Reserved.</p>
+  <div>
+    <ul>
+      <li>Item 1</li>
+      <li>
+        <p>Item 2</p>
+      </li>
+      <li>Item 3</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+  <br><br>
+  <a href="#">link-1</a>
+  <a href="#" target="self">Link-2</a>
+  <a href="/http:www.Google.com" target="blank">Google</a>
+  <br><br>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+
+</html>
